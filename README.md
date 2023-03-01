@@ -11,20 +11,20 @@ calculos executados.
 
 ## Tela do Login
 
-<img src="https://github.com/LucasEPaduam/WonaldsExpress/blob/master/Imagens/TELA%20MENU.PNG?raw=true">
+<img src="https://github.com/LucasEPaduam/Calculator-CSharp/blob/main/Imagens%20Telas/Login.PNG?raw=true">
 
 ## Tela Inicial 
 
-<img src="https://github.com/LucasEPaduam/WonaldsExpress/blob/master/Imagens/Tela%20Vendas%20Realizadas.PNG?raw=true">
+<img src="https://github.com/LucasEPaduam/Calculator-CSharp/blob/main/Imagens%20Telas/Inicial.PNG?raw=true">
 
 ## Tela Cadastro Usuário 
 
-<img src="https://github.com/LucasEPaduam/WonaldsExpress/blob/master/Imagens/Tela%20Vendas%20Realizadas.PNG?raw=true">
+<img src="https://github.com/LucasEPaduam/Calculator-CSharp/blob/main/Imagens%20Telas/CadastroUser.PNG?raw=true">
 
 ## Tela Troca Senha 
 
-<img src="https://github.com/LucasEPaduam/WonaldsExpress/blob/master/Imagens/Tela%20Vendas%20Realizadas.PNG?raw=true">
+<img src="https://github.com/LucasEPaduam/Calculator-CSharp/blob/main/Imagens%20Telas/Pass.PNG?raw=true">
 
 ## Tela Histórico
 
-<img src="https://github.com/LucasEPaduam/WonaldsExpress/blob/master/Imagens/Tela%20Vendas%20Realizadas.PNG?raw=true">
+<img src="https://github.com/LucasEPaduam/Calculator-CSharp/blob/main/Imagens%20Telas/Historico.PNG?raw=true">
