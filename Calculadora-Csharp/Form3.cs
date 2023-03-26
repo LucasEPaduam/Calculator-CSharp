@@ -101,11 +101,16 @@ namespace Calculadora_Csharp
         private void label_esqueceu_Click(object sender, EventArgs e)
         {
             cpf = textBox1.Text;
+            label_esqueceu.ForeColor = Color.Green;
+            label_esqueceu.BackColor = Color.Black;
+
 
             if (cpf == "")
             {
                 MessageBox.Show("Informe seu CPF.");
                 textBox1.Focus();
+                label_esqueceu.ForeColor = Color.Black;
+                label_esqueceu.BackColor = Color.IndianRed;
                 return;
             }
             else
@@ -137,11 +142,13 @@ namespace Calculadora_Csharp
 
                     EsqueceuSenha es = new EsqueceuSenha();
                     es.sendEmail(cpf, nome, email, password);
+                    label_esqueceu.ForeColor = Color.Black;
+                    label_esqueceu.BackColor = Color.IndianRed;
 
                 }
                 catch (Exception erro)
                 {
-                    MessageBox.Show("CPF não encontrado!" + erro);
+                    MessageBox.Show("Error" + erro);
                 }
             }
         }

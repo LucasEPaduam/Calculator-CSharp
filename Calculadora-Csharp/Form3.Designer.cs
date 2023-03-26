@@ -134,10 +134,11 @@
             // label_esqueceu
             // 
             this.label_esqueceu.AutoSize = true;
-            this.label_esqueceu.Font = new System.Drawing.Font("Bauhaus 93", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_esqueceu.Location = new System.Drawing.Point(84, 225);
+            this.label_esqueceu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_esqueceu.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_esqueceu.Location = new System.Drawing.Point(74, 223);
             this.label_esqueceu.Name = "label_esqueceu";
-            this.label_esqueceu.Size = new System.Drawing.Size(128, 15);
+            this.label_esqueceu.Size = new System.Drawing.Size(158, 18);
             this.label_esqueceu.TabIndex = 7;
             this.label_esqueceu.Text = "Esqueceu sua senha?";
             this.label_esqueceu.Click += new System.EventHandler(this.label_esqueceu_Click);
