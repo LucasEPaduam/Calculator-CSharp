@@ -39,7 +39,7 @@ namespace Calculadora_Csharp
 
 
         DataTable dt = new DataTable();
-        
+
 
         private void buttonAccess_Click_1(object sender, EventArgs e)
         {
@@ -63,7 +63,7 @@ namespace Calculadora_Csharp
                     {
                         using (MySqlConnection conn = BancoDados.conexaoBanco())
                         {
-                           
+
                             using (MySqlCommand cmd = new MySqlCommand(sql, conn))
                             using (MySqlDataReader reader = cmd.ExecuteReader())
                             {
@@ -98,6 +98,52 @@ namespace Calculadora_Csharp
             }
         }
 
+        private void label_esqueceu_Click(object sender, EventArgs e)
+        {
+            cpf = textBox1.Text;
+
+            if (cpf == "")
+            {
+                MessageBox.Show("Informe seu CPF.");
+                textBox1.Focus();
+                return;
+            }
+            else
+            {
+                try
+                {
+                    string sql = "SELECT * FROM userCalc WHERE cpf= '" + cpf + "'";
+                    dt = BancoDados.Consulta(sql);
+
+                    if (dt.Rows.Count == 1)
+                    {
+                        using (MySqlConnection conn = BancoDados.conexaoBanco())
+                        {
+
+                            using (MySqlCommand cmd = new MySqlCommand(sql, conn))
+                            using (MySqlDataReader reader = cmd.ExecuteReader())
+                            {
+                                while (reader.Read())
+                                {
+                                    password = reader.GetString(1);
+                                    tipoUser = reader.GetString(2);
+                                    email = reader.GetString(3);
+                                    nome = reader.GetString(4);
+                                }
+
+                            }
+                        }
+                    }
+
+                    EsqueceuSenha es = new EsqueceuSenha();
+                    es.sendEmail(cpf, nome, email, password);
+
+                }
+                catch (Exception erro)
+                {
+                    MessageBox.Show("CPF não encontrado!" + erro);
+                }
+            }
+        }
     }
-    
 }

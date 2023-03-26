@@ -37,6 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label_esqueceu = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -53,6 +54,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.IndianRed;
+            this.panel2.Controls.Add(this.label_esqueceu);
             this.panel2.Controls.Add(this.buttonAccess);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.textBox1);
@@ -129,6 +131,17 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Calculator";
             // 
+            // label_esqueceu
+            // 
+            this.label_esqueceu.AutoSize = true;
+            this.label_esqueceu.Font = new System.Drawing.Font("Bauhaus 93", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_esqueceu.Location = new System.Drawing.Point(84, 225);
+            this.label_esqueceu.Name = "label_esqueceu";
+            this.label_esqueceu.Size = new System.Drawing.Size(128, 15);
+            this.label_esqueceu.TabIndex = 7;
+            this.label_esqueceu.Text = "Esqueceu sua senha?";
+            this.label_esqueceu.Click += new System.EventHandler(this.label_esqueceu_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -156,5 +169,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btn_Acessar;
         private System.Windows.Forms.Button buttonAccess;
+        private System.Windows.Forms.Label label_esqueceu;
     }
 }
