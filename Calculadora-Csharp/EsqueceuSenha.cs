@@ -26,7 +26,7 @@ namespace Calculadora_Csharp
 
                 var client = new SmtpClient("smtp.gmail.com", 587)
                 {
-                    Credentials = new NetworkCredential("calculatorsifsp@gmail.com", "inrokjzhaemseokv"),
+                    Credentials = new NetworkCredential("", ""),
                     EnableSsl = true
                 };
                 var mailMessage = new MailMessage
